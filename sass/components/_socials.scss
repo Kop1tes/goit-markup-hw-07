@@ -1,38 +1,47 @@
-.social__link--light {
+.social {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: var(--main-dark-theme);
-    border-radius: 50%;
-    color: var(--bg-buttons);
+    gap: 10px;
 
-    transition: color var(--anim-slow), background-color var(--anim-slow);
+    &__link--light {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background-color: var(--main-dark-theme);
+            border-radius: 50%;
+            color: var(--bg-buttons); 
+    
+            transition: color var(--anim-slow), background-color var(--anim-slow);
+        }
 
-    &:hover,
-    &:focus {
+    &__link--dark {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--main-dark-theme);
+        
+            transition: background-color var(--anim-slow);
+        }
+
+    &__link--light:hover,
+    &__link--light:focus {
             color: var(--main-dark-theme);
             background-color: var(--btn-change);
         }
-}
 
-.connect__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: var(--main-dark-theme);
-
-    transition: background-color var(--anim-slow);
-
-    &:hover,
-    &:focus {
-            color: var(--main-dark-theme);
+    &__link--dark:hover,
+    &__link--dark:focus {
             background-color: var(--btn-change);
+                }
+
+    &__icon {
+            fill: currentColor;
         }
 }
-

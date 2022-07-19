@@ -374,12 +374,12 @@ img {
   margin-bottom: 16px;
 }
 
-.social__list {
+/* .social {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
+} */
 
 /* .social__link--light {
   display: flex;
@@ -400,9 +400,9 @@ img {
   background-color: var(--btn-change);
 } */
 
-.social__icon {
+/* .social__icon {
   fill: currentColor;
-}
+} */
 
 /* Section clients */
 
@@ -417,7 +417,7 @@ img {
   gap: 30px;
 }
 
-.clients__item {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,8 +433,8 @@ img {
   transition: color var(--anim-slow), border var(--anim-slow);
 }
 
-.clients__item:hover,
-.clients__item:focus {
+.clients__link:hover,
+.clients__link:focus {
   color: var(--btn-change);
   border: 1px solid var(--btn-change);
 }
@@ -486,36 +486,6 @@ img {
   margin-bottom: 20px;
 }
 
-/* .connect__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  color: var(--main-dark-theme);
-
-  transition: background-color var(--anim-slow);
-}
-
-.connect__link:hover,
-.connect__link:focus {
-  color: var(--main-dark-theme);
-  background-color: var(--btn-change);
-} */
-
-.connect__icon {
-  fill: currentColor;
-}
-
-.connect__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
 .footer-list {
   display: flex;
   align-items: baseline;
@@ -539,7 +509,7 @@ img {
   width: 358px;
   height: 50px;
   padding-left: 16px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--main-dark-theme);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -613,8 +583,18 @@ img {
   border: 1px solid #eeeeee;
 }
 
-.projects__link {
+.projects__item {
   transition: box-shadow var(--anim-slow);
+}
+
+.projects__link:hover .projects__desk {
+  transform: translateY(0);
+}
+
+.projects__item:hover,
+.projects__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects__overlay {
@@ -643,16 +623,6 @@ img {
   transform: translateY(100%);
 
   transition: transform var(--anim-slow);
-}
-
-.projects__link:hover .projects__desk {
-  transform: translateY(0);
-}
-
-.projects__link:hover,
-.projects__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects__box-down {
